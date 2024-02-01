@@ -40,6 +40,14 @@
                                     <label for="description">Description:</label>
                                     <p>{{ $question->Description }}</p>
                                 </div>
+                                <div class="col-sm-12">
+                                    <label for="description">Option1:</label>
+                                    <p>{{ $question->Option1 }}</p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="description">Option2:</label>
+                                    <p>{{ $question->Option2 }}</p>
+                                </div>
                             @else
                                 <p>question not found.</p>
                             @endif
