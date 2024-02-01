@@ -25,8 +25,8 @@ php artisan make:migration create_questions_table
 ```
 6. créer les seeders
 ```bash
-php artisan make:seeder create_examens_seeders
-php artisan make:seeder create_questions_seeders
+php artisan make:seeder ExamensSeeders
+php artisan make:seeder QuestionsSeeders
 
 ```
 7. commands to create Request
