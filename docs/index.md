@@ -3,3 +3,4 @@
 3. [jeux-de-test.md](./docs/jeux-de-test.md) 
 4. [back-end.md](./docs/back-end.md) 
 5. [unit-test.md](./docs/unit-test.md) 
+6. [front-end.md](./docs/front-end.md) 

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ExamenController;
+use App\Http\Controllers\QuestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/',[QuestionController::class,'index'])->name('home');
+
+Route::get('examens/questions/{Id_examen}',[QuestionController::class,'index'])->name('projects.tasks');
+
+Route::resource('questions', QuestionController::class);
+Route::resource('examens', ExamenController::class);
+
