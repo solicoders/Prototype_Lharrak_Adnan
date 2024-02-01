@@ -36,7 +36,7 @@ abstract class BaseRepository
   {
     $data = $this->model->find($id);
     if (!$data) {
-      return false;
+      return null;
     }
     return $data->update($validatedData);
   }
