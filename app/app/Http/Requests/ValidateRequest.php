@@ -11,7 +11,7 @@ class ValidateRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,6 +23,12 @@ class ValidateRequest extends FormRequest
     {
         return [
             //
+            
+                'Titre' => 'required|max:40',
+                'Option1' => 'required',
+                'Option2' => 'required',
+                'Id_examen' => 'required',
+            
         ];
     }
 }

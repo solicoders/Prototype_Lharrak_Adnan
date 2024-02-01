@@ -18,10 +18,10 @@ use App\Http\Controllers\QuestionController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/',[ExamenController::class,'index'])->name('home');
+Route::get('/',[QuestionController::class,'index'])->name('home');
 
 Route::get('examens/questions/{Id_examen}',[QuestionController::class,'index'])->name('projects.tasks');
 
 Route::resource('questions', QuestionController::class);
-Route::resource('projects', ExamenController::class);
+Route::resource('examens', ExamenController::class);
 
