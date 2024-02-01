@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('examens', function (Blueprint $table) {
             $table->id();
+            $table->string('Titre');
+            $table->string('Description')->nullable();
+            $table->date('Date_debut');
+            $table->date('Date_fin')->nullable();
             $table->timestamps();
         });
     }
